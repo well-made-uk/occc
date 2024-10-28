@@ -1,5 +1,9 @@
-<!doctype html>
-<html lang="{{ $.Site.Language.Lang }}">
-  <body class="sans-serif">
+<!DOCTYPE html>
+<html>
+{{- partial "head.html" . -}}
+  <body>
+    <div id="content">
+      {{- block "main" . }}{{- end }}
+    </div>
   </body>
 </html>
