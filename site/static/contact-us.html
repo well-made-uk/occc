@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  Last Published: Mon Oct 28 2024 09:55:27 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Mon Oct 28 2024 11:47:47 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="65faed8365faf13f4c9f956b" data-wf-site="65c771cc39ce7106362f82a4" lang="en">
 <head>
   <meta charset="utf-8">
@@ -573,5 +573,19 @@ th:not([data-sort=disabled]):hover {
 </script>
   <script src="https://api.clevercarbon.io/subscribe.js" defer=""></script>
   <script src="https://clevercarbon-cdn.netlify.app/contact.js"></script>
+  <script>
+	// Parse the URL query parameters
+  var urlParams = new URLSearchParams(window.location.search);
+  // Check if the 'job' parameter exists
+  if(urlParams.has('job')) {
+    var job = urlParams.get('job');
+    // Set the 'topic' select to 'Jobs'
+    $('#topic').val('Jobs');
+    // Set the 'subject' input to the 'job' parameter value
+    $('#subject').val(job);
+    // Disable the 'topic' and 'subject' fields
+    $('#topic, #subject').prop('disabled', true);
+  }
+</script>
 </body>
 </html>
