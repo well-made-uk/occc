@@ -1,0 +1,51 @@
+.frame-content {
+    font-family: 'Avenir Next', Arial, Helvetica, sans-serif;
+    line-height: 1.9rem;
+    width:100%;
+    max-width:900px;
+    padding:2rem;
+    border-top:4px solid black;
+    border-bottom: 4px solid black;
+    background-color:white;
+}
+
+body > div {
+    padding: 1rem 0;
+}
+
+.frame-content img {
+    max-width: 100%;
+}
+
+body {
+    background-color: #9EF2EA;
+}
+
+.frame-content h1, .frame-content h2, .frame-content h3 {
+    font-family: "Berlingske Serif", "Berlingske", serif;
+    font-weight:bold;
+}
+
+h.frame-content 1 {
+    font-size: 2rem;
+    margin-bottom:1rem;
+}
+
+.frame-content ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+.frame-content ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+.frame-content ul ul, .frame-content ol ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    margin-left: 15px;
+}
+.frame-content ol ol, .frame-content ul ol {
+    list-style-type: lower-latin;
+    list-style-position: inside;
+    margin-left: 15px;
+}
